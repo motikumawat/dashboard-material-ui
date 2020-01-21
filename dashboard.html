@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+   <meta charset="utf-8" />
+   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+   <title>
+   
+   </title>
+   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+   <!--     Fonts and icons     -->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+   <!-- CSS Files -->
+   <link href="../assets/css/material-kit.css?v=2.0.6" rel="stylesheet" />
+   <!-- CSS Just for demo purpose, don't include it in your project -->
+   <link href="../assets/demo/demo.css" rel="stylesheet" />
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/script.js"></script>
+
+
+
+
+
+ <!--Load the AJAX API-->
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+ <script type="text/javascript">
+
+   // Load the Visualization API and the corechart package.
+   google.charts.load('current', {'packages':['corechart']});
+
+   // Set a callback to run when the Google Visualization API is loaded.
+   google.charts.setOnLoadCallback(drawChart);
+
+   // Callback that creates and populates a data table,
+   // instantiates the pie chart, passes in the data and
+   // draws it.
+   function drawChart() {
+
+     // Create the data table.
+     var data = new google.visualization.DataTable();
+     data.addColumn('string', 'Topping');
+     data.addColumn('number', 'Slices');
+     data.addRows([
+       ['Mushrooms', 3],
+       ['Onions', 1],
+       ['Olives', 1],
+       ['Zucchini', 1],
+       ['Pepperoni', 2]
+     ]);
+
+     // Set chart options
+     var options = {'title':'Pie Chart',
+     colors: ['#00569d', '#6cffcd', '#ffe770', '#ff859a', '#ae98fc'],
+    };
+
+     // Instantiate and draw our chart, passing in some options.
+     var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+     chart.draw(data, options);
+   }
+ </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </head>
+ 
+ <body class="profile-page sidebar-collapse">
+    <nav class="navbar navbar-expand-lg app-top-bar bg-plum-plate" role="navigation-demo">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-translate">
+            <a class="navbar-brand" href="#">Dashboard</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                
+              <li class="nav-item">
+                <a href="#pablo" class="nav-link">
+                Create Account
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#pablo" class="nav-link">
+               Login
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#pablo" class="btn btn-rose btn-raised btn-fab btn-round" data-toggle="dropdown">
+                  <i class="material-icons">email</i>
+                </a>
+              </li>
+              <li class="dropdown nav-item">
+                <a href="#pablo" class="profile-photo dropdown-toggle nav-link" data-toggle="dropdown">
+                  <div class="profile-photo-small">
+                    <img src="./assets/img/faces/avatar.jpg" alt="Circle Image" class="rounded-circle img-fluid">
+                  </div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <h6 class="dropdown-header">Dropdown header</h6>
+                  <a href="#pablo" class="dropdown-item">Me</a>
+                  <a href="#pablo" class="dropdown-item">Settings and other stuff</a>
+                  <a href="#pablo" class="dropdown-item">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-->
+      </nav>
+    <section class="sticky-top">
+        <div class="progress-container">
+            <div class="progress-bar " id="myBar"></div>
+          </div> 
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <div class="navbar-translate">
+                <button class="navbar-toggler" type="button"  class="navbar-toggle" data-target="#bs-example-navbar-collapse-2">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2"> 
+                <ul class="navbar-nav ">
+                   <form class="form-inline nav-item">
+                       <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                      <i class="material-icons">search</i>
+                   </form>
+                  <li class="dropdown nav-item">
+                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                      <i class="material-icons">apps</i> Components
+                    </a>
+                    <div class="dropdown-menu dropdown-with-icons">
+                      <a href="../index.html" class="dropdown-item">
+                        <i class="material-icons">layers</i> All Components
+                      </a>
+                      <a href="https://demos.creative-tim.com/material-kit/docs/2.1/getting-started/introduction.html" class="dropdown-item">
+                        <i class="material-icons">content_paste</i> Documentation
+                      </a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
+                      <i class="material-icons">cloud_download</i> Download
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank" data-original-title="Follow us on Twitter">
+                      <i class="fa fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank" data-original-title="Like us on Facebook">
+                      <i class="fa fa-facebook-square"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank" data-original-title="Follow us on Instagram">
+                      <i class="fa fa-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+         </nav>
+        
+    </section>  
+
+   
+   
+  
+
+    
+        <section>
+           
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                      <div class="card card-stats bg-gradient-primary">
+                        <div class="card-body">
+                          <div class="row">
+                                <div class="numbers ml-auto mr-auto">
+                                <p class="card-category">Capacity</p>
+                                <p class="card-title">150GB</p>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="card-footer">
+                          <hr>
+                          <div class="stats">
+                            <i class="material-icons">refresh</i>  Update Now
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="card card-stats  bg-gradient-warning">
+                          <div class="card-body">
+                            <div class="row">
+                                  <div class="numbers ml-auto mr-auto">
+                                  <p class="card-category">Capacity</p>
+                                  <p class="card-title">150GB</p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="card-footer">
+                            <hr>
+                            <div class="stats">
+                              <i class="material-icons">refresh</i>  Update Now
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="card card-stats bg-plum-plate">
+                          <div class="card-body">
+                            <div class="row">
+                                  <div class="numbers ml-auto mr-auto">
+                                  <p class="card-category">Capacity</p>
+                                  <p class="card-title">150GB</p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="card-footer">
+                            <hr>
+                            <div class="stats">
+                              <i class="material-icons">refresh</i>  Update Now
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                  
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6">
+                      <div class="card">
+                        <div class="card-header">
+                          <div class="row">
+                            <div class="col-sm-7">
+                              <div class="numbers pull-left">
+                                $34,657
+                              </div>
+                            </div>
+                            <div class="col-sm-5">
+                              <div class="pull-right">
+                                <span class="badge badge-pill badge-success">
+                                  +18%
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <h6 class="big-title">total earnings in last ten quarters</h6>
+                           <div id="chart_div" class="chart-box"></div>
+                         </div>
+                        <div class="card-footer">
+                          <hr>
+                          <div class="row">
+                            <div class="col-sm-7">
+                              <div class="footer-title">Financial Statistics</div>
+                            </div>
+                            <div class="col-sm-5">
+                              <div class="pull-right">
+                                <button class="btn btn-success btn-round btn-icon btn-sm">
+                                  <i class="material-icons">add</i>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                      <div class="card">
+                        <div class="card-header">
+                          <div class="row">
+                            <div class="col-sm-7">
+                              <div class="numbers pull-left">
+                                169
+                              </div>
+                            </div>
+                            <div class="col-sm-5">
+                              <div class="pull-right">
+                                <span class="badge badge-pill badge-danger">
+                                  -14%
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+                          <h6 class="big-title">total subscriptions in last 7 days</h6>
+                          <canvas id="emailsCampaignChart" width="483" height="222" class="chartjs-render-monitor" style="display: block; width: 483px; height: 222px;"></canvas>
+                        </div>
+                        <div class="card-footer">
+                          <hr>
+                          <div class="row">
+                            <div class="col-sm-7">
+                              <div class="footer-title">View all members</div>
+                            </div>
+                            <div class="col-sm-5">
+                              <div class="pull-right">
+                                <button class="btn btn-danger btn-round btn-icon btn-sm">
+                                    <i class="material-icons">play_arrow</i>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                      <div class="card">
+                        <div class="card-header">
+                          <div class="row">
+                            <div class="col-sm-7">
+                              <div class="numbers pull-left">
+                                8,960
+                              </div>
+                            </div>
+                            <div class="col-sm-5">
+                              <div class="pull-right">
+                                <span class="badge badge-pill badge-warning">
+                                  ~51%
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+                          <h6 class="big-title">total downloads in last 6 years</h6>
+                          <canvas id="activeCountries" width="483" height="222" class="chartjs-render-monitor" style="display: block; width: 483px; height: 222px;"></canvas>
+                        </div>
+                        <div class="card-footer">
+                          <hr>
+                          <div class="row">
+                            <div class="col-sm-7">
+                              <div class="footer-title">View more details</div>
+                            </div>
+                            <div class="col-sm-5">
+                              <div class="pull-right">
+                                <button class="btn btn-warning btn-round btn-icon btn-sm">
+                                    <i class="material-icons">error</i>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+             
+               </div>
+        </section>
+         
+                
+
+          
+          
+ 
+
+   <footer class="footer footer-default">
+     <div class="container">
+       <nav class="float-left">
+         <ul>
+           <li>
+             <a href="https://www.creative-tim.com">
+               Creative Tim
+             </a>
+           </li>
+           <li>
+             <a href="https://creative-tim.com/presentation">
+               About Us
+             </a>
+           </li>
+           <li>
+             <a href="http://blog.creative-tim.com">
+               Blog
+             </a>
+           </li>
+           <li>
+             <a href="https://www.creative-tim.com/license">
+               Licenses
+             </a>
+           </li>
+         </ul>
+       </nav>
+       <div class="copyright float-right">
+         &copy;
+         <script>
+           document.write(new Date().getFullYear())
+         </script> <i class="material-icons">favorite</i>
+         <a href="https://www.creative-tim.com" target="_blank"></a> 
+       </div>
+     </div>
+   </footer>
+   <!--   Core JS Files   -->
+   <script src="../assets/js/core/jquery.min.js" type="text/javascript"></script>
+   <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
+   <script src="../assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+   <script src="../assets/js/plugins/moment.min.js"></script>
+   <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+   <script src="../assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+   <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+   <script src="../assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+   <!--  Google Maps Plugin    -->
+   <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
+   <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+   <script src="../assets/js/material-kit.js?v=2.0.6" type="text/javascript"></script>
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </body>
+ 
+ </html>
+ 
