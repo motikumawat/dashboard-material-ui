@@ -18,6 +18,7 @@
     white-space: nowrap;
     word-wrap: normal;
     direction: ltr;
+    font-feature-settings: 'liga';
     -webkit-font-feature-settings: 'liga';
     -webkit-font-smoothing: antialiased;
 }
@@ -56,8 +57,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.navbar {
+    color: #4149ac;
+}
+
+.profile-page .page-header {
+    height: 150px;
+}
+
 .main {
-    background: #f9fafc;
+    background: #E8EAED;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
     box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
@@ -66,8 +75,19 @@
     -ms-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
-.body {
-    background: #fff;
+.footer-title a {
+    background:linear-gradient(to bottom, #ff9800 0%, #ff9800 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 3px 3px;
+    color: #000;
+    text-decoration: none;
+    transition: background-size .2s;
+    padding: 4px 2px;
+}
+
+.footer-title a:hover {
+    background-size: 3px 50px;
 }
 
 .progress-container {
@@ -117,9 +137,11 @@
 .card .card-header:not([class*="header-"]) {
     box-shadow: none;
 }
-.intro-header .nav-wrapper-right .txt-blue{
-    color:#091d3d;
+
+.intro-header .nav-wrapper-right .txt-blue {
+    color: #091d3d;
 }
+
 .big-title {
     font-size: 16px;
     font-weight: 600;
@@ -153,21 +175,9 @@
     line-height: 1.4em;
 }
 
-.badge.badge-success {
-    border-color: #6bd098;
-    background-color: #6bd098;
+.footer-title {
+    color: #354e7b;
 }
-.footer-title{
-   color: #354e7b;
-}
-.brand {
-    position: relative;
-    top: 20px;
-}
-
-
-
-
 
 /* top bar */
 .app-top-bar {
@@ -178,21 +188,6 @@
     padding: 0 .75rem;
     color: #fff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* background color */
 .bg-plum-plate {
@@ -207,16 +202,22 @@
     background: linear-gradient(to right, #3023ae, #c86dd7);
 }
 
+.bg-gradient-blue:after {
+    background: #121924;
+    background: linear-gradient(45deg, rgba(101, 47, 142, 0.88) 0%, #121924 100%);
+    background: -moz-linear-gradient(135deg, rgba(101, 47, 142, 0.88) 0%, #121924 100%);
+    background: -webkit-linear-gradient(135deg, rgba(101, 47, 142, 0.88) 0%, #121924 100%);
+}
+
 .chart-box {
     height: 222px;
 }
 
 /* footer */
 footer {
-    background: transparent;
+    background: #121924;
+    color: #fff;
 }
-
-
 
 /* Animation Timers
 ---------------------------------*/
