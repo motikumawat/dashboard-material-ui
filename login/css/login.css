@@ -185,7 +185,10 @@ iframe {
   -ms-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
-
+.captcha{
+  text-align: -webkit-center;
+  position: relative;
+  }
 /*==================================================================
 [ Form ]*/
 

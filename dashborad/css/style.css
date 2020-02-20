@@ -74,7 +74,9 @@
     -o-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
     -ms-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
 }
-
+.section-main{
+    padding: 30px 0;
+}
 .footer-title a {
     background:linear-gradient(to bottom, #ff9800 0%, #ff9800 100%);
     background-position: 0 100%;
@@ -209,14 +211,31 @@
     background: -webkit-linear-gradient(135deg, rgba(101, 47, 142, 0.88) 0%, #121924 100%);
 }
 
-.chart-box {
-    height: 222px;
+.chart-box-300 {
+    height: 300px;
+    position: relative;
 }
+.chart-box-200 {
+    height: 200px;
+    position: relative;
+}
+.pie-chart-container{
+    margin: 0 auto;
+    position: relative;
+    height: 300px;
+    width: 300px;
+}
+
+
 
 /* footer */
 footer {
     background: #121924;
     color: #fff;
+    padding: 0;
+}
+footer .heart:hover {
+   color: crimson;
 }
 
 /* Animation Timers
